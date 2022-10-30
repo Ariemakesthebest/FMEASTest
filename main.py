@@ -145,7 +145,7 @@ dur = round(int(sf.info(file).duration))
 sd.default.reset()
 sd.default.device = device
 if verbose == "True":
-    clog.verbose("Playing Tones through Audio Switch")
+    clog.verbose("Playing Tones through Endec Monitor")
 sd.play(data, fs)
 sd.wait()
 print("If your Endec relayed it then everything is configured properly! If not you might want to check it out...")
