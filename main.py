@@ -115,7 +115,7 @@ device = getdev()
 jjj = getjjj()
 header = f"ZCZC-EAS-DMO-{fips}+0015-{jjj}-{callsign}-" 
 Alert = EASGen.genEAS(header=header, attentionTone=True, endOfMessage=True, SampleRate=48000, mode="DASDEC") 
-EASGen.export_wav("Alert.wav", Alert)
+EASGen.export_wav("audio/Alert.wav", Alert)
 
 file = "audio/play.wav"
 data, fs = sf.read(file, dtype='float32')
@@ -137,7 +137,7 @@ device = getdev()
 jjj = getjjj()
 header = f"ZCZC-EAS-DMO-{fips}+0015-{jjj}-{callsign}-" 
 Alert = EASGen.genEAS(header=header, attentionTone=True, endOfMessage=True, SampleRate=48000, mode="DASDEC") 
-EASGen.export_wav("Alert.wav", Alert)
+EASGen.export_wav("audio/Alert.wav", Alert)
 
 file = "audio/play.wav"
 data, fs = sf.read(file, dtype='float32')
